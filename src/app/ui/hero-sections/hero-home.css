@@ -1,0 +1,33 @@
+.animation-wrapper {
+  text-align: right;
+  background-color: #0a0a0a; /* Corregí el color */
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 110px;
+  padding-top: 10vh;
+  height: 100vh;
+  text-transform: uppercase;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+p {
+  display: block;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.animation-wrapper a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.site {
+  color: #47cca5;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+}
