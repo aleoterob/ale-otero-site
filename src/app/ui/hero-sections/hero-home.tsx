@@ -37,18 +37,14 @@ const HeroHome = () => {
   }, []);
 
   return (
-    <div className="text-right  text-white font-montserrat font-light text-[110px] pt-[10vh] h-screen uppercase overflow-hidden [perspective:1000px]">
-      <p className="block whitespace-nowrap m-0 alejandro">
+    <div className="text-right text-9xl">
+      <p className="alejandro font-light">
         <span>alejandro</span>
-        <span className="text-white no-underline inline-block font-bold otero">
-          otero
-        </span>
+        <span className="font-bold otero">otero</span>
       </p>
-      <p className="block whitespace-nowrap m-0 two portfolio">
+      <p className="portfolio font-light">
         <span>portfolio</span>
-        <span className="text-[#47cca5] no-underline inline-block font-bold site">
-          site
-        </span>
+        <span className="text-verdeAle font-bold site">site</span>
       </p>
     </div>
   );
