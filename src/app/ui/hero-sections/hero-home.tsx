@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import "./hero-home.css";
 
 const HeroHome = () => {
   const boxRef = useRef(null);
@@ -51,14 +50,25 @@ const HeroHome = () => {
   }, []);
 
   return (
-    <div className="animation-wrapper" ref={boxRef}>
-      <p className="one" ref={boxRef}>
+    <div
+      className="text-right  text-white font-montserrat font-light text-[110px] pt-[10vh] h-screen uppercase overflow-hidden [perspective:1000px]"
+      ref={boxRef}
+    >
+      <p className="block whitespace-nowrap m-0 one" ref={boxRef}>
         <span ref={boxRef}>alejandro</span>
-        <a href="#about">otero</a>
+        <a
+          href="#about"
+          className="text-white no-underline inline-block font-bold"
+        >
+          otero
+        </a>
       </p>
-      <p className="two" ref={boxRef}>
+      <p className="block whitespace-nowrap m-0 two" ref={boxRef}>
         <span ref={boxRef}>portfolio</span>
-        <span className="site" ref={boxRef}>
+        <span
+          className="text-[#47cca5] no-underline inline-block font-bold site"
+          ref={boxRef}
+        >
           site
         </span>
       </p>
