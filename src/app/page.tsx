@@ -1,4 +1,3 @@
-import StackedList from "./ui/stacked-list/stacked-list";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
