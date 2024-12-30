@@ -81,6 +81,7 @@ const HeroHome = () => {
         <div className="flex flex-col">
           <p>next.js</p>
           <p>gsap.js</p>
+          <p>chart.js</p>
           <p>tailwind</p>
         </div>
       </div>
