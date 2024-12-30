@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center pb-8 w-full">
       <HeroHome />
-      <div className="flex flex-col text-right w-1490 pt-24" id="about-me-id">
+      <div className="flex flex-col text-right w-1490 pt-16" id="about-me-id">
         <h1 className="text-7xl  font-montserrat font-bold">ABOUT ME</h1>
         <div className="flex flex-row gap-10 pt-16">
           <Image
@@ -67,13 +67,11 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col h-full items-center pt-20">
+        <div className="flex flex-col h-full items-center pt-10">
           <UpDownButtonToSkills />
         </div>
-        <div className="flex flex-col" id="skills-id">
-          <h1 className="text-7xl  font-montserrat font-bold pt-20 pb-14">
-            SKILLS
-          </h1>
+        <div className="flex flex-col pt-16" id="skills-id">
+          <h1 className="text-7xl  font-montserrat font-bold pb-14">SKILLS</h1>
           <div className="flex flex-row w-full">
             <div className=" w-full">
               <ProgrammingSkillsChart />
@@ -82,10 +80,10 @@ export default function Home() {
               <DesignSkillsChart />
             </div>
           </div>
-          <div className="flex flex-col h-full items-center pt-32">
+          <div className="flex flex-col h-full items-center pt-10">
             <UpDownButtonToLastSkills />
           </div>
-          <div className="flex flex-row w-full pt-20 pb-32" id="last-skills-id">
+          <div className="flex flex-row w-full pt-20 pb-4" id="last-skills-id">
             <div className=" w-full">
               <ProgrammingSkillsChart />
             </div>
