@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="flex flex-row justify-between py-3 px-6 border-b border-greyVercel border-solid">
+    <div className="w-1490 flex flex-row justify-between py-6">
       <Link href={"/"} className="flex items-center">
         <Image
-          src="/images/logo-ale-otero-web-blanco-verde.svg"
+          src="/images/logo-ale-otero-web-blanco-roboto.svg"
           width={180}
           height={1}
           alt="Logo"

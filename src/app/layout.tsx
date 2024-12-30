@@ -15,13 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-screen font-montserrat font-regular antialiased items-center justify-center">
-        <header className="w-full bg-background">
+      <body className="flex flex-col min-h-screen font-montserrat font-regular antialiased w-full">
+        <header className="flex flex-col w-full items-center bg-transparent z-50">
           <Header />
           <SlideMenu />
         </header>
         {/* flex-grow in the main makes it occupy the available space between the header and the footer. */}
-        <main className="flex flex-grow items-center justify-center">
+        <main className="flex flex-col flex-grow items-center w-full">
           {children}
         </main>
         <footer className="w-full bg-background text-foreground text-xs py-4 text-center border-t border-greyVercel border-solid">
