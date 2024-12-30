@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        "1490": "1490px",
+      },
       maxWidth: {
         "1140": "1140px",
       },
