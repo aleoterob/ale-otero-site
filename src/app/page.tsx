@@ -54,8 +54,8 @@ export default function Home() {
             <p className="text-lg pb-4" style={{ lineHeight: "1.300" }}>
               Regarding to the methodologies I have worked with, I have nine
               years of experience with Agile, mainly with Scrum, but also with
-              Kanban and XP, among others. For project task management I've been
-              using Jira all my carreer, but also Asana, Coda and Trello.
+              Kanban and XP, among others. For project task management I have
+              been using Jira all my carreer, but also Asana, Coda and Trello.
             </p>
             <p className="text-lg" style={{ lineHeight: "1.300" }}>
               Beyond my technical proficiency, I am passionate about blending
