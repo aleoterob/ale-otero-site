@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Image from "next/image"; // Asegúrate de que esta importación esté presente y sin conflictos
 import gsap from "gsap";
 import UpDownButtonToAboutMe from "../buttons/up-down-button-to-about-me";
+import SocialButtons from "../buttons/social-buttons";
 
 const HeroHome = () => {
   useEffect(() => {
@@ -43,39 +44,45 @@ const HeroHome = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center  w-full hero-home-container">
-      <div className="flex flex-row gap-10 flex-wrap  justify-center items-center  h-screen w-full">
+    <div className="flex flex-col justify-center items-center  w-full hero-home-container -mt-75">
+      <div className="flex flex-col gap-10 flex-wrap  justify-start items-center  h-screen w-full">
+        <div className="flex flex-row justify-end items-end w-full pt-24 z-10">
+          <SocialButtons />
+        </div>
         <video
           autoPlay
           loop
           muted
-          className="absolute left-0 w-full object-cover opacity-25  h-screen"
+          className="absolute left-0 w-full object-cover  h-screen"
         >
           <source src="/videos/uhd_30fps.mp4" type="video/mp4" />
         </video>
         <div
-          className="flex flex-col justify-center text-left text-8xl font-montserrat font-bold pt-56"
+          className="flex flex-row  items-start justify-start text-8xl font-montserrat font-bold pt-16 w-full"
           style={{ lineHeight: "0.90" }}
         >
-          <p className="my">MY</p>
-          <p className="personal">PERSONAL</p>
-          <p className="portfolio">PORTFOLIO</p>
-          <p className="site text-verdeAle font-bold">SITE</p>
-        </div>
-        <div>
-          <Image
-            className="hero-image rounded-lg"
-            src=""
-            alt="Hero home image"
-            width={400}
-            height={1}
-          />
-        </div>
-        <div className="flex flex-row text-right justify-between items-end w-full pt-14">
-          <div className="flex flex-col text-left">
-            <p>PORTFOLIO</p>
+          <div className="flex flex-col justify-start items-start w-full pl-48">
+            <p className="my">MY</p>
+            <p className="personal">PERSONAL</p>
+            <p className="portfolio">PORTFOLIO</p>
+            <p className="site text-verdeAle font-bold">SITE</p>
           </div>
-          <UpDownButtonToAboutMe />
+        </div>
+
+        <div className="flex flex-row text-right justify-between w-full z-20 pt-32">
+          <div className="flex flex-col text-left">
+            <Image
+              className=""
+              src="/images/portfolio-icon.svg"
+              alt="Portfolio Icon"
+              width={100}
+              height={1}
+            />
+          </div>
+          <div className="flex flex-col pt-24">
+            <UpDownButtonToAboutMe />
+          </div>
+
           <div className="flex flex-col">
             <p>next.js</p>
             <p>gsap.js</p>

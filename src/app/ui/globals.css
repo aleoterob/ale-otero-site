@@ -18,7 +18,3 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
-
-.hero-home-container {
-  margin-top: -75px;
-}

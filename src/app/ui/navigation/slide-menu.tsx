@@ -39,7 +39,7 @@ export default function SlideMenu() {
         } w-64 shadow-lg z-50`}
       >
         {/* Contenido del Slide Menu */}
-        <div className="px-8 py-4 flex flex-col h-full">
+        <div className="px-8 py-4 flex flex-col h-full z-50">
           {/* Botón de cerrar */}
           <div className="flex justify-end">
             <Image
