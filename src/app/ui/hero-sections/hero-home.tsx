@@ -44,7 +44,7 @@ const HeroHome = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center  w-full hero-home-container">
+    <div className="flex flex-col justify-center items-center  w-full hero-home-container -mt-75">
       <div className="flex flex-col gap-10 flex-wrap  justify-start items-center  h-screen w-full">
         <div className="flex flex-row justify-end items-end w-full pt-24 z-10">
           <SocialButtons />
