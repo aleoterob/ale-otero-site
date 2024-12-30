@@ -8,6 +8,21 @@ export default {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        "1140": "1140px",
+      },
+      width: {
+        "1490": "1490px",
+      },
+      margin: {
+        "52": "13rem", // Agrega el margen negativo de 50px
+      },
+      height: {
+        "375": "375px",
+        "500": "500px",
+        "700": "700px",
+        "800": "800px",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
