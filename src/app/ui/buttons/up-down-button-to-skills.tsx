@@ -33,7 +33,7 @@ const UpDownButtonToSkills = () => {
 
   return (
     <Link
-      href="/#about-me-id"
+      href="/#skills-id"
       onClick={handleScroll}
       className="relative inline-block cursor-pointer"
     >

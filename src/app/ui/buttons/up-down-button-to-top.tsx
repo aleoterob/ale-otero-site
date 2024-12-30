@@ -33,7 +33,7 @@ const UpDownButtonToTop = () => {
 
   return (
     <Link
-      href="/#"
+      href="/#home-top-id"
       onClick={handleScroll}
       className="relative inline-block cursor-pointer"
     >
