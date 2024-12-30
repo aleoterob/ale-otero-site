@@ -34,6 +34,9 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
+      fontSize: {
+        base: "16px", // Tamaño base en la raíz
+      },
     },
   },
   plugins: [],
