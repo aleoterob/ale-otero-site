@@ -22,7 +22,7 @@ const UpDownButtonToLastSkills = () => {
     }
   }, []);
 
-  const handleScroll = (e) => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault(); // Prevenir el comportamiento predeterminado
     gsap.to(window, {
       duration: 2, // Duración del desplazamiento
