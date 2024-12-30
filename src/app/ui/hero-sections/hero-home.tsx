@@ -43,13 +43,13 @@ const HeroHome = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center  w-1490  z-40 hero-home-container">
-      <div className="flex flex-row gap-10 flex-wrap  justify-center items-center z-30 h-screen">
+    <div className="flex flex-col justify-center items-center  w-full hero-home-container">
+      <div className="flex flex-row gap-10 flex-wrap  justify-center items-center  h-screen w-full">
         <video
           autoPlay
           loop
           muted
-          className="absolute left-0 w-full object-cover opacity-25 z-0 h-screen"
+          className="absolute left-0 w-full object-cover opacity-25  h-screen"
         >
           <source src="/videos/uhd_30fps.mp4" type="video/mp4" />
         </video>

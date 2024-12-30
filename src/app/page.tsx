@@ -10,9 +10,9 @@ import DesignSkillsChart from "./ui/charts/design-skills-chart";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center pb-8 w-full">
+    <div className="flex flex-col items-center pb-8 w-1490">
       <HeroHome />
-      <div className="flex flex-col text-right w-1490 pt-16" id="about-me-id">
+      <div className="flex flex-col text-right  pt-16" id="about-me-id">
         <h1 className="text-7xl  font-montserrat font-bold">ABOUT ME</h1>
         <div className="flex flex-row gap-10 pt-16">
           <Image

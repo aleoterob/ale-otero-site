@@ -25,7 +25,7 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="w-full bg-background text-foreground text-xs py-4 text-center border-t border-greyVercel border-solid">
-          © 2024 Alejandro Otero
+          Copyright © 2024 Alejandro Otero
         </footer>
       </body>
     </html>
