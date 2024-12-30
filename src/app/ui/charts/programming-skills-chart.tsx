@@ -72,7 +72,7 @@ const ProgrammingSkillsChart = () => {
     },
     plugins: {
       legend: {
-        position: "top",
+        position: "top" as const,
         labels: {
           color: "#ffffff", // Color del texto de la leyenda
         },
