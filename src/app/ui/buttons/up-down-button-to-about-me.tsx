@@ -10,8 +10,8 @@ const UpDownButtonToAboutMe = () => {
     if (buttonRef.current) {
       // Animación con GSAP
       gsap.to(buttonRef.current, {
-        y: -50, // Movimiento hacia arriba
-        duration: 1, // Duración del movimiento
+        y: -15, // Movimiento hacia arriba
+        duration: 0.3, // Duración del movimiento
         ease: "power1.inOut", // Efecto ease
         yoyo: true, // Reversión
         repeat: -1, // Animación infinita
