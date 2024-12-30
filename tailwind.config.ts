@@ -33,6 +33,9 @@ export default {
         greyVercel: "#858585",
         rojoMucho: "#DC524A",
         verdeAle: "#47cca5",
+        negroPuro: "#000000",
+        negroSlideMenu: "#1e1e1e",
+        grisHover: "#848484",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
