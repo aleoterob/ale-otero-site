@@ -21,14 +21,14 @@ export default function Home() {
             width={450}
             height={1}
           />
-          <div className="flex flex-col ">
+          <div className="flex flex-col">
             <p className="text-lg pb-4" style={{ lineHeight: "1.300" }}>
-              My name is Alejandro Otero, I was born in Argentina and I'm fourty
-              five years old. I've been working as Front End and Web developer
-              for the last six years. My experience also include six years as
-              Java backend developer. I've studied the carrer of Multiplatform
-              Application Development on IES Fernando Wirtz Suarez of La Coruña,
-              Spain.
+              My name is Alejandro Otero, I was born in Argentina and I am
+              fourty five years old. I have been working as Front End and Web
+              developer for the last six years. My experience also include six
+              years as Java backend developer. I have studied the carrer of
+              Multiplatform Application Development on IES Fernando Wirtz Suarez
+              of La Coruña, Spain.
             </p>
             <br></br>
             <br></br>
@@ -44,7 +44,7 @@ export default function Home() {
               different CMSs, mainly with Wordpress, but also with Shopify,
               Webflow, Wix, Drupal and Joomla. I also would like to mention that
               I have nine years of experience with GIT and GIT repositories like
-              GitHub and BitBucket. Currently, I'm learning React Native, which
+              GitHub and BitBucket. Currently, I am learning React Native, which
               I hope to master soon.
             </p>
             <p className="text-lg pb-4" style={{ lineHeight: "1.300" }}>
