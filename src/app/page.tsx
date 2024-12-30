@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import HeroHome from "./ui/hero-sections/hero-home";
+import ProgrammingSkillsChart from "./ui/charts/programming-skills-chart";
+import DesignSkillsChart from "./ui/charts/design-skills-chart";
 
 export const metadata: Metadata = {
   title: "Home | Ale Otero Site",
@@ -11,8 +13,8 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center pb-8 w-full">
       <HeroHome />
-      <div className="text-7xl flex flex-col text-right w-1490  w-1490">
-        <h1 className="font-montserrat font-bold">PRESENTATION</h1>
+      <div className="flex flex-col text-right w-1490">
+        <h1 className="text-7xl  font-montserrat font-bold">PRESENTATION</h1>
         <div className="flex flex-row gap-10 pt-16">
           <Image
             className="hero-image rounded-lg"
@@ -21,7 +23,7 @@ export default function Home() {
             width={450}
             height={1}
           />
-          <div className="flex flex-col">
+          <div className="flex flex-col font-light">
             <p className="text-lg pb-4" style={{ lineHeight: "1.300" }}>
               My name is Alejandro Otero, I was born in Argentina and I am
               fourty five years old. I have been working as Front End and Web
@@ -64,6 +66,17 @@ export default function Home() {
               myself on maintaining clear communication and consistently
               delivering high-quality work on time.
             </p>
+          </div>
+        </div>
+        <h1 className="text-7xl  font-montserrat font-bold pt-28 pb-14">
+          SKILLS
+        </h1>
+        <div className="flex flex-row w-full">
+          <div className=" w-full">
+            <ProgrammingSkillsChart />
+          </div>
+          <div className=" w-full">
+            <DesignSkillsChart />
           </div>
         </div>
       </div>
