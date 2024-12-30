@@ -3,6 +3,7 @@ import "./ui/globals.css";
 import Header from "./ui/header/header";
 import Footer from "./ui/footer/footer";
 import SlideMenu from "./ui/navigation/slide-menu";
+import CursorPointer from "./ui/cursors/cursor-pointer";
 
 export const metadata: Metadata = {
   title: "Home | Ale Otero Site",
@@ -28,6 +29,7 @@ export default function RootLayout({
         <footer className="w-full">
           <Footer />
         </footer>
+        <CursorPointer />
       </body>
     </html>
   );
