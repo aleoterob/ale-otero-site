@@ -1,20 +1,19 @@
-import type { Metadata } from "next";
+"use client";
+
 import Image from "next/image";
 import HeroHome from "./ui/hero-sections/hero-home";
+import UpDownButtonToSkills from "./ui/buttons/up-down-button-to-skills";
+import UpDownButtonToLastSkills from "./ui/buttons/up-down-button-to-last-skills";
+import UpDownButtonToTop from "./ui/buttons/up-down-button-to-top";
 import ProgrammingSkillsChart from "./ui/charts/programming-skills-chart";
 import DesignSkillsChart from "./ui/charts/design-skills-chart";
-
-export const metadata: Metadata = {
-  title: "Home | Ale Otero Site",
-  description: "Alejandro Otero Portfolio Site",
-};
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center pb-8 w-full">
       <HeroHome />
-      <div className="flex flex-col text-right w-1490">
-        <h1 className="text-7xl  font-montserrat font-bold">PRESENTATION</h1>
+      <div className="flex flex-col text-right w-1490 pt-24" id="about-me-id">
+        <h1 className="text-7xl  font-montserrat font-bold">ABOUT ME</h1>
         <div className="flex flex-row gap-10 pt-16">
           <Image
             className="hero-image rounded-lg"
@@ -68,17 +67,36 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <h1 className="text-7xl  font-montserrat font-bold pt-28 pb-14">
-          SKILLS
-        </h1>
-        <div className="flex flex-row w-full">
-          <div className=" w-full">
-            <ProgrammingSkillsChart />
+        <div className="flex flex-col h-full items-center pt-20">
+          <UpDownButtonToSkills />
+        </div>
+        <div className="flex flex-col" id="skills-id">
+          <h1 className="text-7xl  font-montserrat font-bold pt-20 pb-14">
+            SKILLS
+          </h1>
+          <div className="flex flex-row w-full">
+            <div className=" w-full">
+              <ProgrammingSkillsChart />
+            </div>
+            <div className=" w-full">
+              <DesignSkillsChart />
+            </div>
           </div>
-          <div className=" w-full">
-            <DesignSkillsChart />
+          <div className="flex flex-col h-full items-center pt-32">
+            <UpDownButtonToLastSkills />
+          </div>
+          <div className="flex flex-row w-full pt-20 pb-32" id="last-skills-id">
+            <div className=" w-full">
+              <ProgrammingSkillsChart />
+            </div>
+            <div className=" w-full">
+              <DesignSkillsChart />
+            </div>
           </div>
         </div>
+      </div>
+      <div className="flex flex-col w-full items-end pt-24 pr-10">
+        <UpDownButtonToTop />
       </div>
     </div>
   );

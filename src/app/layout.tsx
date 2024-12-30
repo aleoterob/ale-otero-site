@@ -4,7 +4,7 @@ import Header from "./ui/header/header";
 import SlideMenu from "./ui/navigation/slide-menu";
 
 export const metadata: Metadata = {
-  title: "Ale Otero Site",
+  title: "Home | Ale Otero Site",
   description: "Alejandro Otero Portfolio Site",
 };
 

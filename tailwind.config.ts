@@ -15,7 +15,8 @@ export default {
         "1490": "1490px",
       },
       margin: {
-        "52": "13rem", // Agrega el margen negativo de 50px
+        "235": "235",
+        "75": "75",
       },
       height: {
         "375": "375px",
