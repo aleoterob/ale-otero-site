@@ -43,7 +43,7 @@ const HeroHome = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center  w-1490 -mt-75 z-40">
+    <div className="flex flex-col justify-center items-center  w-1490  z-40 hero-home-container">
       <div className="flex flex-row gap-10 flex-wrap  justify-center items-center z-30 h-screen">
         <video
           autoPlay
