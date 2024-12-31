@@ -29,6 +29,7 @@ export default {
         "600": "600px",
         "700": "700px",
         "800": "800px",
+        "1000": "1000px",
       },
       colors: {
         background: "var(--background)",
