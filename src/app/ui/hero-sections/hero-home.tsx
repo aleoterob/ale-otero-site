@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect } from "react";
-import Image from "next/image"; // Asegúrate de que esta importación esté presente y sin conflictos
 import gsap from "gsap";
 import UpDownButtonToAboutMe from "../buttons/up-down-button-to-about-me";
 import SocialButtons from "../buttons/social-buttons";
+import PortfolioButton from "../buttons/portfolio-button";
 
 const HeroHome = () => {
   useEffect(() => {
@@ -71,13 +71,7 @@ const HeroHome = () => {
 
         <div className="flex flex-row text-right justify-between w-full z-20 pt-32">
           <div className="flex flex-col text-left">
-            <Image
-              className=""
-              src="/images/portfolio-icon.svg"
-              alt="Portfolio Icon"
-              width={100}
-              height={1}
-            />
+            <PortfolioButton />
           </div>
           <div className="flex flex-col pt-24">
             <UpDownButtonToAboutMe />
