@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className="text-7xl  font-montserrat font-bold">ABOUT ME</h1>
           <div className="flex flex-row gap-10 pt-16">
             <Image
-              className="hero-image rounded-lg"
+              className="ale-image rounded-lg opacity-0"
               src="/images/imagen-ale-hero.jpg"
               alt="Hero home image"
               width={450}

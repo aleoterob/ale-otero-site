@@ -8,45 +8,69 @@ import PortfolioButton from "../buttons/portfolio-button";
 
 const HeroHome = () => {
   useEffect(() => {
-    const timeline = gsap.timeline();
+    if (typeof window !== "undefined") {
+      // Función para observar los elementos y ejecutar animaciones
+      const observeAndAnimate = (selector: string, animation: () => void) => {
+        const element = document.querySelector(selector);
 
-    timeline
-      .from(".my", {
-        x: "-100%", // Mueve desde fuera de la pantalla a la izquierda
-        opacity: 0,
-        duration: 1,
-        ease: "power2.out",
-      })
-      .from(
-        ".personal",
-        {
-          x: "100%", // Mueve desde fuera de la pantalla a la derecha
-          opacity: 0,
-          duration: 1,
-          ease: "power2.out",
-        },
-        "-=0.5" // Superpone la animación con 0.5 segundos de retraso
-      )
-      .from(
-        ".portfolio",
-        {
-          x: "-100%", // Mueve desde fuera de la pantalla a la izquierda
-          opacity: 0,
-          duration: 1,
-          ease: "power2.out",
-        },
-        "-=0.5"
-      )
-      .from(
-        ".site",
-        {
-          y: "100%", // Mueve desde fuera de la pantalla por abajo
-          opacity: 0,
-          duration: 1,
-          ease: "power2.out",
-        },
-        "-=0.5"
-      );
+        if (element) {
+          const observer = new IntersectionObserver(
+            ([entry]) => {
+              if (entry.isIntersecting) {
+                animation(); // Ejecuta la animación
+                observer.unobserve(entry.target); // Deja de observar después de la animación
+              }
+            },
+            { threshold: 0.5 } // Activa cuando el 50% del elemento es visible
+          );
+
+          observer.observe(element);
+        }
+      };
+
+      // Animaciones específicas
+      const heroImageAnimation = () =>
+        gsap.fromTo(
+          ".ale-image",
+          { x: "-100%", opacity: 0 },
+          { x: "0%", opacity: 1, duration: 1, ease: "power2.out" }
+        );
+
+      const myAnimation = () =>
+        gsap.fromTo(
+          ".my",
+          { x: "-100%", opacity: 0 },
+          { x: "0%", opacity: 1, duration: 1, ease: "power2.out" }
+        );
+
+      const personalAnimation = () =>
+        gsap.fromTo(
+          ".personal",
+          { x: "100%", opacity: 0 },
+          { x: "0%", opacity: 1, duration: 1, ease: "power2.out" }
+        );
+
+      const portfolioAnimation = () =>
+        gsap.fromTo(
+          ".portfolio",
+          { x: "-100%", opacity: 0 },
+          { x: "0%", opacity: 1, duration: 1, ease: "power2.out" }
+        );
+
+      const siteAnimation = () =>
+        gsap.fromTo(
+          ".site",
+          { y: "100%", opacity: 0 },
+          { y: "0%", opacity: 1, duration: 1, ease: "power2.out" }
+        );
+
+      // Observa cada elemento y aplica la animación correspondiente
+      observeAndAnimate(".ale-image", heroImageAnimation);
+      observeAndAnimate(".my", myAnimation);
+      observeAndAnimate(".personal", personalAnimation);
+      observeAndAnimate(".portfolio", portfolioAnimation);
+      observeAndAnimate(".site", siteAnimation);
+    }
   }, []);
 
   return (
