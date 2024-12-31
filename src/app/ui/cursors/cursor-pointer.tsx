@@ -50,8 +50,8 @@ const CursorPointer = () => {
 
   return (
     <>
-      <div className="cursor fixed w-2.5 h-2.5 bg-verdeAle rounded-full pointer-events-none z-[10000]"></div>
-      <div className="cursor-follower fixed w-8 h-8 border border-verdeAle rounded-full pointer-events-none z-[9999]"></div>
+      <div className="cursor fixed w-2.5 h-2.5  bg-verdeAle opacity-50 rounded-full pointer-events-none z-[10000]"></div>
+      <div className="cursor-follower fixed w-8 h-8 border-2 opacity-50 border-verdeAle rounded-full pointer-events-none z-[9999]"></div>
     </>
   );
 };
