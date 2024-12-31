@@ -87,14 +87,14 @@ const HeroHome = () => {
         <div className="flex flex-row justify-end items-end w-full pt-24 z-10">
           <SocialButtons />
         </div>
-        {/* <video
+        <video
           autoPlay
           loop
           muted
-          className="absolute left-0 w-full object-cover h-screen"
+          className="absolute left-0 w-full object-cover h-4/6 sm:h-screen md:h-screen lg:h-screen xl:h-screen 2xl:h-screen"
         >
           <source src="/videos/uhd_30fps.mp4" type="video/mp4" />
-        </video> */}
+        </video>
         <div
           className="flex flex-row items-start justify-start  font-montserrat font-bold  w-full text-6xl sm:text-6xl  md:text-8xl lg:text-8xl xl:text-8xl"
           style={{ lineHeight: "0.90" }}
