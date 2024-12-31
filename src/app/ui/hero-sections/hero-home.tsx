@@ -28,7 +28,36 @@ const HeroHome = () => {
         }
       };
 
-      // Animaciones específicas
+      // Animación en cadena con timeline
+      const animateText = () => {
+        const tl = gsap.timeline();
+
+        tl.fromTo(
+          ".my",
+          { x: "-100%", opacity: 0 },
+          { x: "0%", opacity: 1, duration: 1, ease: "power2.out" }
+        )
+          .fromTo(
+            ".personal",
+            { x: "100%", opacity: 0 },
+            { x: "0%", opacity: 1, duration: 1, ease: "power2.out" },
+            ">-0.5" // Comienza 0.5 segundos después de que termine la animación anterior
+          )
+          .fromTo(
+            ".portfolio",
+            { x: "-100%", opacity: 0 },
+            { x: "0%", opacity: 1, duration: 1, ease: "power2.out" },
+            ">-0.5"
+          )
+          .fromTo(
+            ".site",
+            { y: "100%", opacity: 0 },
+            { y: "0%", opacity: 1, duration: 1, ease: "power2.out" },
+            ">-0.5"
+          );
+      };
+
+      // Animación para la imagen principal
       const heroImageAnimation = () =>
         gsap.fromTo(
           ".ale-image",
@@ -36,40 +65,9 @@ const HeroHome = () => {
           { x: "0%", opacity: 1, duration: 1, ease: "power2.out" }
         );
 
-      const myAnimation = () =>
-        gsap.fromTo(
-          ".my",
-          { x: "-100%", opacity: 0 },
-          { x: "0%", opacity: 1, duration: 1, ease: "power2.out" }
-        );
-
-      const personalAnimation = () =>
-        gsap.fromTo(
-          ".personal",
-          { x: "100%", opacity: 0 },
-          { x: "0%", opacity: 1, duration: 1, ease: "power2.out" }
-        );
-
-      const portfolioAnimation = () =>
-        gsap.fromTo(
-          ".portfolio",
-          { x: "-100%", opacity: 0 },
-          { x: "0%", opacity: 1, duration: 1, ease: "power2.out" }
-        );
-
-      const siteAnimation = () =>
-        gsap.fromTo(
-          ".site",
-          { y: "100%", opacity: 0 },
-          { y: "0%", opacity: 1, duration: 1, ease: "power2.out" }
-        );
-
       // Observa cada elemento y aplica la animación correspondiente
       observeAndAnimate(".ale-image", heroImageAnimation);
-      observeAndAnimate(".my", myAnimation);
-      observeAndAnimate(".personal", personalAnimation);
-      observeAndAnimate(".portfolio", portfolioAnimation);
-      observeAndAnimate(".site", siteAnimation);
+      observeAndAnimate(".my", animateText);
     }
   }, []);
 
