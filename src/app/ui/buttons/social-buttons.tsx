@@ -51,7 +51,7 @@ const SocialButtons = () => {
             width={30}
             height={30}
             priority
-            className="cursor-pointer social-icon"
+            className="cursor-pointer social-icon w-9 sm:w-8 md:w-8 lg:w-8 xl:w-8 2xl:w-8"
           />
         </a>
       </Link>
@@ -63,7 +63,7 @@ const SocialButtons = () => {
             width={30}
             height={30}
             priority
-            className="cursor-pointer social-icon"
+            className="cursor-pointer social-icon w-9 sm:w-8 md:w-8 lg:w-8 xl:w-8 2xl:w-8"
           />
         </a>
       </Link>
@@ -75,7 +75,7 @@ const SocialButtons = () => {
             width={30}
             height={30}
             priority
-            className="cursor-pointer social-icon"
+            className="cursor-pointer social-icon w-9 sm:w-8 md:w-8 lg:w-8 xl:w-8 2xl:w-8"
           />
         </a>
       </Link>
