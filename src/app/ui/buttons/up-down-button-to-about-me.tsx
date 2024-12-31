@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 
 const UpDownButtonToAboutMe = () => {
   const buttonRef = useRef(null);
+  const imageRef = useRef<HTMLImageElement>(null); // Referencia para la imagen
 
   useEffect(() => {
     if (buttonRef.current) {
@@ -17,6 +18,35 @@ const UpDownButtonToAboutMe = () => {
         repeat: -1, // Animación infinita
       });
     }
+
+    // Agregar animación para el zoom in y zoom out en la imagen
+    const image = imageRef.current;
+
+    if (image) {
+      image.addEventListener("mouseenter", () => {
+        gsap.to(image, {
+          scale: 1.15, // Zoom in
+          duration: 0.3,
+          ease: "power1.inOut",
+        });
+      });
+
+      image.addEventListener("mouseleave", () => {
+        gsap.to(image, {
+          scale: 1, // Zoom out
+          duration: 0.3,
+          ease: "power1.inOut",
+        });
+      });
+    }
+
+    // Limpiar los event listeners cuando el componente se desmonte
+    return () => {
+      if (image) {
+        image.removeEventListener("mouseenter", () => {});
+        image.removeEventListener("mouseleave", () => {});
+      }
+    };
   }, []);
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -36,6 +66,7 @@ const UpDownButtonToAboutMe = () => {
       >
         <div ref={buttonRef}>
           <Image
+            ref={imageRef} // Añadir la referencia a la imagen
             src="/images/down-arrow-icon.svg"
             alt="Up and Down Animation"
             width={50}
