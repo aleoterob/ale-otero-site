@@ -29,9 +29,6 @@ export default {
         "700": "700px",
         "800": "800px",
       },
-      fontSize: {
-        headingMobile: ["3.40rem", { lineHeight: "1" }],
-      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
