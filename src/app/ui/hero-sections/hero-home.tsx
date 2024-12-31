@@ -99,7 +99,7 @@ const HeroHome = () => {
           className="flex flex-row items-start justify-start  font-montserrat font-bold  w-full text-5xl  sm:text-6xl  md:text-8xl lg:text-8xl xl:text-8xl"
           style={{ lineHeight: "0.90" }}
         >
-          <div className="flex flex-col justify-start items-start w-full pl:10 sm:pl-0 md:pl-10 lg:pl-20 xl:pl-60 2xl:pl-60">
+          <div className="flex flex-col justify-start items-start w-full pl-0 sm:pl-0 md:pl-10 lg:pl-20 xl:pl-60 2xl:pl-60">
             <p className="my">MY</p>
             <p className="personal">PERSONAL</p>
             <p className="portfolio">PORTFOLIO</p>
