@@ -83,7 +83,7 @@ const HeroHome = () => {
 
   return (
     <div className="flex flex-col justify-center items-center hero-home-container w-full">
-      <div className="flex flex-col gap-10 flex-wrap justify-start items-center h-max sm:h-max md:h-screen lg:h-screen xl:h-screen w-full">
+      <div className="flex flex-col gap-10 flex-wrap justify-start items-center h-600 sm:h-1000 md:h-screen lg:h-screen xl:h-screen 2xl:h-screen w-full">
         <div className="flex flex-row justify-end items-end w-full pt-24 z-10">
           <SocialButtons />
         </div>
@@ -91,7 +91,7 @@ const HeroHome = () => {
           autoPlay
           loop
           muted
-          className="absolute left-0 w-full object-cover h-600 sm:h-screen md:h-screen lg:h-screen xl:h-screen 2xl:h-screen"
+          className="absolute left-0 w-full object-cover h-600 sm:h-700 md:h-screen lg:h-screen xl:h-screen 2xl:h-screen"
         >
           <source src="/videos/uhd_30fps.mp4" type="video/mp4" />
         </video>
