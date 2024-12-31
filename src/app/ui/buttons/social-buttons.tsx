@@ -8,33 +8,35 @@ import gsap from "gsap";
 const SocialButtons = () => {
   useEffect(() => {
     // Selecciona todas las imágenes
-    const icons = document.querySelectorAll(".social-icon");
+    const icons = document.querySelectorAll<HTMLImageElement>(".social-icon");
+
+    // Funciones para manejar los eventos
+    const handleMouseEnter = (event: Event) => {
+      gsap.to(event.currentTarget, {
+        scale: 1.2, // Amplía el tamaño al 120%
+        duration: 0.3,
+        ease: "power2.out",
+      });
+    };
+
+    const handleMouseLeave = (event: Event) => {
+      gsap.to(event.currentTarget, {
+        scale: 1, // Vuelve al tamaño original
+        duration: 0.3,
+        ease: "power2.out",
+      });
+    };
 
     icons.forEach((icon) => {
-      // Zoom in en hover
-      icon.addEventListener("mouseenter", () => {
-        gsap.to(icon, {
-          scale: 1.2, // Amplía el tamaño al 120%
-          duration: 0.3,
-          ease: "power2.out",
-        });
-      });
-
-      // Restaurar tamaño original al salir del hover
-      icon.addEventListener("mouseleave", () => {
-        gsap.to(icon, {
-          scale: 1, // Vuelve al tamaño original
-          duration: 0.3,
-          ease: "power2.out",
-        });
-      });
+      icon.addEventListener("mouseenter", handleMouseEnter);
+      icon.addEventListener("mouseleave", handleMouseLeave);
     });
 
     // Limpia los event listeners al desmontar el componente
     return () => {
       icons.forEach((icon) => {
-        icon.removeEventListener("mouseenter", null);
-        icon.removeEventListener("mouseleave", null);
+        icon.removeEventListener("mouseenter", handleMouseEnter);
+        icon.removeEventListener("mouseleave", handleMouseLeave);
       });
     };
   }, []);
