@@ -18,12 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen font-montserrat font-regular antialiased w-full">
-        <header className="flex flex-col w-full items-center bg-transparent z-50 ">
+        <header className="flex flex-col max-w-full items-center bg-transparent z-50">
           <Header />
           <SlideMenu />
         </header>
         {/* flex-grow in the main makes it occupy the available space between the header and the footer. */}
-        <main className="flex flex-col flex-grow items-center w-full">
+        <main className="flex flex-col flex-grow items-center max-w-full">
           {children}
         </main>
         <footer className="w-full">

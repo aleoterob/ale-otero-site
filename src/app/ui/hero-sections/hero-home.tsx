@@ -82,24 +82,24 @@ const HeroHome = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full hero-home-container -mt-75">
-      <div className="flex flex-col gap-10 flex-wrap justify-start items-center h-screen w-full">
+    <div className="flex flex-col justify-center items-center hero-home-container w-full">
+      <div className="flex flex-col gap-10 flex-wrap justify-start items-center h-max sm:h-max md:h-screen lg:h-screen xl:h-screen w-full">
         <div className="flex flex-row justify-end items-end w-full pt-24 z-10">
           <SocialButtons />
         </div>
-        <video
+        {/* <video
           autoPlay
           loop
           muted
           className="absolute left-0 w-full object-cover h-screen"
         >
           <source src="/videos/uhd_30fps.mp4" type="video/mp4" />
-        </video>
+        </video> */}
         <div
-          className="flex flex-row items-start justify-start text-8xl font-montserrat font-bold pt-16 w-full"
+          className="flex flex-row items-start justify-start  font-montserrat font-bold  w-full text-5xl  sm:text-6xl  md:text-8xl lg:text-8xl xl:text-8xl"
           style={{ lineHeight: "0.90" }}
         >
-          <div className="flex flex-col justify-start items-start w-full pl-60">
+          <div className="flex flex-col justify-start items-start w-full pl:10 sm:pl-20 md:pl-10 lg:pl-20 xl:pl-60 2xl:pl-60">
             <p className="my">MY</p>
             <p className="personal">PERSONAL</p>
             <p className="portfolio">PORTFOLIO</p>
@@ -107,11 +107,11 @@ const HeroHome = () => {
           </div>
         </div>
 
-        <div className="flex flex-row text-right justify-between w-full z-20 pt-32">
+        <div className="flex flex-row text-right justify-between w-full z-20 pt-6 sm:pt-32  md:pt-32 lg:pt-32 xl:pt-32 2xl:pt-32 sm:flex md:flex lg:flex xl:flex 2xl:flex">
           <div className="flex flex-col text-left">
             <PortfolioButton />
           </div>
-          <div className="flex flex-col pt-24">
+          <div className="hidden flex-col pt-8 sm:pt-8 md:pt-24 lg:pt-24 xl:pt-24 sm:flex md:flex lg:flex xl:flex 2xl:flex">
             <UpDownButtonToAboutMe />
           </div>
 

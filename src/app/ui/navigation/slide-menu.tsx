@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import gsap from "gsap"; // Importar gsap
 
 export default function SlideMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +29,33 @@ export default function SlideMenu() {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    // Seleccionar todos los links dentro del menú
+    const links = document.querySelectorAll(".menu-link");
+
+    // Agregar animación con GSAP al hacer hover
+    links.forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        gsap.to(link, { scale: 1.02, duration: 0.3, ease: "power2.out" });
+      });
+      link.addEventListener("mouseleave", () => {
+        gsap.to(link, { scale: 1, duration: 0.3, ease: "power2.out" });
+      });
+    });
+
+    // Limpiar eventos al desmontar
+    return () => {
+      links.forEach((link) => {
+        link.removeEventListener("mouseenter", () => {
+          gsap.to(link, { scale: 1.2, duration: 0.3, ease: "power2.out" });
+        });
+        link.removeEventListener("mouseleave", () => {
+          gsap.to(link, { scale: 1, duration: 0.3, ease: "power2.out" });
+        });
+      });
+    };
+  }, []);
+
   return (
     <>
       {/* Slide Menu */}
@@ -52,28 +80,28 @@ export default function SlideMenu() {
 
           <Link
             href="/"
-            className="p-1 text-3xl text-foreground hover:text-grisHover"
+            className="p-1 text-3xl text-foreground hover:text-verdeAle menu-link"
             onClick={handleLinkClick}
           >
             HOME
           </Link>
           <Link
             href="/#about-me-id"
-            className="p-1 text-3xl text-foreground hover:text-grisHover"
+            className="p-1 text-3xl text-foreground hover:text-verdeAle menu-link"
             onClick={handleLinkClick}
           >
             ABOUT ME
           </Link>
           <Link
-            href="/"
-            className="p-1 text-3xl text-foreground hover:text-grisHover"
+            href="/portfolio"
+            className="p-1 text-3xl text-foreground hover:text-verdeAle menu-link"
             onClick={handleLinkClick}
           >
             PORTFOLIO
           </Link>
           <Link
             href="/contact"
-            className="p-1 text-3xl text-foreground hover:text-grisHover"
+            className="p-1 text-3xl text-foreground hover:text-verdeAle menu-link"
             onClick={handleLinkClick}
           >
             CONTACT

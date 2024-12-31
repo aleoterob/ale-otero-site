@@ -12,10 +12,13 @@ import WordpressSkillsChart from "./ui/charts/wordpress-skills-chart";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center pb-8 w-full">
-      <div className="flex flex-col items-center pb-8 w-1490">
+    <div className="flex flex-col items-center pb-8 w-90%  sm:w-90%  md:w-90% lg:w-90 xl:w-90 2xl:w-1490">
+      <div className="flex flex-col items-center pb-8 w-90% sm:w-90%  md:w-90% lg:w-90 xl:w-90 2xl:w-1490">
         <HeroHome />
-        <div className="flex flex-col text-right  pt-16" id="about-me-id">
+        <div
+          className="flex flex-col text-right  pt-40 sm:pt-28 md:pt-16 lg:pt-16 xl:pt-16 2xl:pt-16 "
+          id="about-me-id"
+        >
           <h1 className="text-7xl  font-montserrat font-bold">ABOUT ME</h1>
           <div className="flex flex-row gap-10 pt-16">
             <Image
@@ -77,7 +80,7 @@ export default function Home() {
             <h1 className="text-7xl  font-montserrat font-bold pb-14">
               SKILLS
             </h1>
-            <div className="flex flex-row w-full">
+            <div className="flex flex-row w-full flex-wrap">
               <div className=" w-full">
                 <ProgrammingSkillsChart />
               </div>
@@ -89,7 +92,7 @@ export default function Home() {
               <UpDownButtonToLastSkills />
             </div>
             <div
-              className="flex flex-row w-full pt-20 pb-4"
+              className="flex flex-row w-full pt-20 pb-4 flex-wrap"
               id="last-skills-id"
             >
               <div className=" w-full">
