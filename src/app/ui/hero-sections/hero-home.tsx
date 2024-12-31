@@ -91,7 +91,7 @@ const HeroHome = () => {
           autoPlay
           loop
           muted
-          className="absolute left-0 w-full object-cover h-2.5 sm:h-screen md:h-screen lg:h-screen xl:h-screen 2xl:h-screen"
+          className="absolute left-0 w-full object-cover h-600 sm:h-screen md:h-screen lg:h-screen xl:h-screen 2xl:h-screen"
         >
           <source src="/videos/uhd_30fps.mp4" type="video/mp4" />
         </video>
