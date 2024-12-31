@@ -14,7 +14,7 @@ import {
 // Registrar componentes de Chart.js
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
-const DesignSkillsChart = () => {
+const WordpressSkillsChart = () => {
   // Estado para manejar si el gráfico es visible
   const [isVisible, setIsVisible] = useState(false);
 
@@ -37,8 +37,8 @@ const DesignSkillsChart = () => {
     datasets: [
       {
         data: [95, 90, 85, 92, 80, 88, 85, 70, 75],
-        backgroundColor: ["rgba(247, 177, 211, 1)"],
-        borderColor: ["rgba(247, 177, 211, 1)"],
+        backgroundColor: ["rgba(242, 121, 121, 1)"],
+        borderColor: ["rgba(242, 121, 121, 1)"],
         borderWidth: 1,
       },
     ],
@@ -103,7 +103,7 @@ const DesignSkillsChart = () => {
   return (
     <div className="p-6 bg-background rounded-lg shadow-lg text-white">
       <h2 className="text-2xl font-bold text-white text-center mb-4">
-        Design and Other Tools
+        Wordpress
       </h2>
       <div
         className="relative h-[500px] text-white"
@@ -118,4 +118,4 @@ const DesignSkillsChart = () => {
   );
 };
 
-export default DesignSkillsChart;
+export default WordpressSkillsChart;

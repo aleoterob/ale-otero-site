@@ -7,6 +7,8 @@ import UpDownButtonToLastSkills from "./ui/buttons/up-down-button-to-last-skills
 import UpDownButtonToTop from "./ui/buttons/up-down-button-to-top";
 import ProgrammingSkillsChart from "./ui/charts/programming-skills-chart";
 import DesignSkillsChart from "./ui/charts/design-skills-chart";
+import CmsSkillsChart from "./ui/charts/cms-skills-chart";
+import WordpressSkillsChart from "./ui/charts/wordpress-skills-chart";
 
 export default function Home() {
   return (
@@ -91,10 +93,10 @@ export default function Home() {
               id="last-skills-id"
             >
               <div className=" w-full">
-                <ProgrammingSkillsChart />
+                <CmsSkillsChart />
               </div>
               <div className=" w-full">
-                <DesignSkillsChart />
+                <WordpressSkillsChart />
               </div>
             </div>
           </div>
