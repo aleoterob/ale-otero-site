@@ -68,7 +68,7 @@ const ProgrammingSkillsChart = () => {
     maintainAspectRatio: false,
     animation: {
       duration: 1000, // Duración de la animación
-      easing: "easeInOutQuad",
+      easing: "easeInOutQuad" as const,
       // Solo se activa la animación si isVisible es verdadero
       onComplete: () => {
         if (isVisible) {
