@@ -13,7 +13,7 @@ import WordpressSkillsChart from "./ui/charts/wordpress-skills-chart";
 export default function Home() {
   return (
     <div className="flex flex-col items-start sm:items-center pb-8 w-90%  sm:w-90%  md:w-90% lg:w-90 xl:w-90 2xl:w-1490">
-      <div className="flex flex-col items-center t w-90% sm:w-90%  md:w-90% lg:w-90 xl:w-90 2xl:w-1490">
+      <div className="flex flex-col items-center ">
         <HeroHome />
         <div
           className="flex flex-col text-right  pt-40 sm:pt-28 md:pt-16 lg:pt-16 xl:pt-16 2xl:pt-16 "
