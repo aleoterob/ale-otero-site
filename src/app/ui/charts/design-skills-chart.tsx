@@ -24,19 +24,19 @@ const DesignSkillsChart = () => {
   // Datos para el gráfico
   const data = {
     labels: [
-      "HTML5, CSS3",
-      "JavaScript",
-      "TypeScript",
-      "React, Next.js",
-      "Vue, Angular",
-      "TailWind, SASS",
-      "REST, SOAP",
-      "PHP",
-      "SQL",
+      "Figma",
+      "XD",
+      "Photoshop",
+      "Illustrator",
+      "GIT",
+      "Jira",
+      "Asana",
+      "Notion",
+      "Coda",
     ],
     datasets: [
       {
-        data: [95, 90, 85, 92, 80, 88, 85, 70, 75],
+        data: [100, 86, 94, 90, 100, 100, 94, 90, 80],
         backgroundColor: ["rgba(247, 177, 211, 1)"],
         borderColor: ["rgba(247, 177, 211, 1)"],
         borderWidth: 1,

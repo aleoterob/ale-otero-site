@@ -41,7 +41,7 @@ const HeroHome = () => {
             ".personal",
             { x: "100%", opacity: 0 },
             { x: "0%", opacity: 1, duration: 1, ease: "power2.out" },
-            ">-0.5" // Comienza 0.5 segundos después de que termine la animación anterior
+            ">-0.5"
           )
           .fromTo(
             ".portfolio",
@@ -57,12 +57,22 @@ const HeroHome = () => {
           );
       };
 
-      // Animación para la imagen principal
+      // Animación para la imagen principal con más fade in
       const heroImageAnimation = () =>
         gsap.fromTo(
           ".ale-image",
           { x: "-100%", opacity: 0 },
-          { x: "0%", opacity: 1, duration: 1, ease: "power2.out" }
+          {
+            x: "0%",
+            opacity: 1,
+            duration: 2,
+            ease: "power2.out",
+            delay: 0.5,
+            onComplete: () => {
+              // Fade in adicional luego del slide-in
+              gsap.to(".ale-image", { opacity: 1, duration: 1 });
+            },
+          }
         );
 
       // Observa cada elemento y aplica la animación correspondiente

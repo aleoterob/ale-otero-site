@@ -24,19 +24,18 @@ const WordpressSkillsChart = () => {
   // Datos para el gráfico
   const data = {
     labels: [
-      "HTML5, CSS3",
-      "JavaScript",
-      "TypeScript",
-      "React, Next.js",
-      "Vue, Angular",
-      "TailWind, SASS",
-      "REST, SOAP",
-      "PHP",
-      "SQL",
+      "Elementor Pro",
+      "WP Bakery",
+      "Gutemberg",
+      "CPT",
+      "ACF",
+      "Woocommerce",
+      "Yoast SEO",
+      "WPML",
     ],
     datasets: [
       {
-        data: [95, 90, 85, 92, 80, 88, 85, 70, 75],
+        data: [100, 80, 90, 100, 100, 100, 86, 80],
         backgroundColor: ["rgba(242, 121, 121, 1)"],
         borderColor: ["rgba(242, 121, 121, 1)"],
         borderWidth: 1,

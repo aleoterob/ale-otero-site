@@ -36,7 +36,7 @@ const ProgrammingSkillsChart = () => {
     ],
     datasets: [
       {
-        data: [95, 90, 85, 92, 80, 88, 85, 70, 75],
+        data: [100, 95.8, 89.58, 95.83, 83.33, 100, 100, 79.17, 89.58],
         backgroundColor: ["rgba(71, 204, 165, 1)"],
         borderColor: ["rgba(71, 204, 165, 1)"],
         borderWidth: 1,

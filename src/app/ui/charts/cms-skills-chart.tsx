@@ -24,19 +24,18 @@ const CmsSkillsChart = () => {
   // Datos para el gráfico
   const data = {
     labels: [
-      "HTML5, CSS3",
-      "JavaScript",
-      "TypeScript",
-      "React, Next.js",
-      "Vue, Angular",
-      "TailWind, SASS",
-      "REST, SOAP",
-      "PHP",
-      "SQL",
+      "Wordpress",
+      "Shopify",
+      "Web Flow",
+      "PrestaShop",
+      "Wix",
+      "Drupal",
+      "Joomla",
+      "Magento",
     ],
     datasets: [
       {
-        data: [95, 90, 85, 92, 80, 88, 85, 70, 75],
+        data: [100, 90, 90, 70, 72, 64, 60, 50],
         backgroundColor: ["rgba(146, 135, 205, 1)"],
         borderColor: ["rgba(146, 135, 205, 1)"],
         borderWidth: 1,
