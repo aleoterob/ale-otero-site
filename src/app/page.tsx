@@ -16,17 +16,19 @@ export default function Home() {
       <div className="flex flex-col items-center ">
         <HeroHome />
         <div
-          className="flex flex-col text-right  pt-40 sm:pt-28 md:pt-16 lg:pt-16 xl:pt-16 2xl:pt-16 "
+          className="flex flex-col text-right  pt-8 sm:pt-10 md:pt-10 lg:pt-10 xl:pt-16 2xl:pt-16 "
           id="about-me-id"
         >
-          <h1 className="text-7xl  font-montserrat font-bold">ABOUT ME</h1>
-          <div className="flex flex-row gap-10 pt-16">
+          <h1 className="text-5xl  sm:7xl md:7xl lg7xl: xl:7xl 2xl:7xl font-montserrat font-bold">
+            ABOUT ME
+          </h1>
+          <div className="flex flex-row justify-center gap-10 pt-16 flex-wrap sm:flex-wrap md:flex-nowrap">
             <Image
-              className="ale-image rounded-lg opacity-0"
+              className="ale-image rounded-lg opacity-0 "
               src="/images/imagen-ale-hero.jpg"
               alt="Hero home image"
               width={450}
-              height={1}
+              height={450}
             />
             <div className="flex flex-col font-light">
               <p className="text-lg pb-4" style={{ lineHeight: "1.300" }}>

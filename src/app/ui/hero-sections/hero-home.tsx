@@ -83,7 +83,7 @@ const HeroHome = () => {
 
   return (
     <div className="flex flex-col justify-center items-center hero-home-container w-full">
-      <div className="flex flex-col gap-10 flex-wrap justify-start items-center h-600 sm:h-1000 md:h-screen lg:h-screen xl:h-screen 2xl:h-screen w-full">
+      <div className="flex flex-col gap-10 flex-wrap justify-start items-center h-600 sm:h-700 md:h-screen lg:h-screen xl:h-screen 2xl:h-screen w-full">
         <div className="flex flex-row justify-end items-end w-full pt-24 z-10">
           <SocialButtons />
         </div>
