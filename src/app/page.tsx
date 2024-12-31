@@ -39,8 +39,6 @@ export default function Home() {
                 Multiplatform Application Development on IES Fernando Wirtz
                 Suarez of La Coruña, Spain.
               </p>
-              <br></br>
-              <br></br>
               <p className="text-lg pb-4" style={{ lineHeight: "1.300" }}>
                 Since 2018, I have specialized in Front End Development and
                 Designing, with a particular focus on React and Next.js, which I
