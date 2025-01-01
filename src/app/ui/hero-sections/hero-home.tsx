@@ -1,5 +1,6 @@
 "use client";
 
+import "./globals.scss";
 import { useEffect } from "react";
 import gsap from "gsap";
 import UpDownButtonToAboutMe from "../buttons/up-down-button-to-about-me";
