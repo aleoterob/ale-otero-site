@@ -77,7 +77,7 @@ export default function Home() {
             <UpDownButtonToSkills />
           </div>
           <div className="flex flex-col pt-16" id="skills-id">
-            <h1 className="text-7xl  font-montserrat font-bold pb-14">
+            <h1 className="text-5xl  sm:7xl md:7xl lg7xl: xl:7xl 2xl:7xl font-montserrat font-bold pb-14">
               SKILLS
             </h1>
             <div className="flex flex-row w-full flex-wrap">
