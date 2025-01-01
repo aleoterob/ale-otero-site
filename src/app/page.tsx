@@ -16,15 +16,15 @@ export default function Home() {
       <div className="flex flex-col items-center ">
         <HeroHome />
         <div
-          className="flex flex-col text-right  pt-20 sm:pt-10 md:pt-10 lg:pt-10 xl:pt-16 2xl:pt-16 "
+          className="flex flex-col text-right  pt-14 sm:pt-10 md:pt-10 lg:pt-10 xl:pt-16 2xl:pt-16 "
           id="about-me-id"
         >
           <h1 className="text-5xl  sm:7xl md:7xl lg7xl: xl:7xl 2xl:7xl font-montserrat font-bold">
             ABOUT ME
           </h1>
-          <div className="flex flex-row justify-center gap-10 pt-16 flex-wrap sm:flex-wrap md:flex-nowrap">
+          <div className="flex flex-row justify-center gap-10 pt-16 flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap">
             <Image
-              className="ale-image rounded-lg opacity-0 "
+              className="ale-image rounded-lg opacity-0 w-full md:w-auto lg:w-500 h-500 sm:h-600 md:h-500 lg:h-500"
               src="/images/imagen-ale-hero.jpg"
               alt="Hero home image"
               width={450}
