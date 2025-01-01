@@ -19,7 +19,7 @@ export default function Home() {
           className="flex flex-col text-right  pt-14 sm:pt-10 md:pt-10 lg:pt-10 xl:pt-16 2xl:pt-16 "
           id="about-me-id"
         >
-          <h1 className="text-5xl  sm:7xl md:7xl lg7xl: xl:7xl 2xl:7xl font-montserrat font-bold">
+          <h1 className="text-6xl  sm:7xl md:7xl lg7xl: xl:7xl 2xl:7xl font-montserrat font-bold">
             ABOUT ME
           </h1>
           <div className="flex flex-row justify-center gap-10 pt-16 flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap">
@@ -77,7 +77,7 @@ export default function Home() {
             <UpDownButtonToSkills />
           </div>
           <div className="flex flex-col pt-16" id="skills-id">
-            <h1 className="text-5xl  sm:7xl md:7xl lg7xl: xl:7xl 2xl:7xl font-montserrat font-bold pb-14">
+            <h1 className="text-6xl  sm:7xl md:7xl lg7xl: xl:7xl 2xl:7xl font-montserrat font-bold pb-14">
               SKILLS
             </h1>
             <div className="flex flex-row w-full flex-wrap">
