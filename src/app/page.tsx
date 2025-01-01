@@ -73,7 +73,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col h-full items-center pt-10">
+          <div className="flex-col h-full items-center pt-10 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex">
             <UpDownButtonToSkills />
           </div>
           <div className="flex flex-col pt-16" id="skills-id">
@@ -88,7 +88,7 @@ export default function Home() {
                 <DesignSkillsChart />
               </div>
             </div>
-            <div className="flex flex-col h-full items-center pt-14">
+            <div className="flex-col h-full items-center pt-14 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex">
               <UpDownButtonToLastSkills />
             </div>
             <div
@@ -105,7 +105,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full items-end pt-4 pr-10">
+      <div className="flex-col w-full items-end pt-4 pr-10 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex">
         <UpDownButtonToTop />
       </div>
     </div>

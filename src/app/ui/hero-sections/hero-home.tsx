@@ -111,7 +111,7 @@ const HeroHome = () => {
           <div className="flex flex-col text-left">
             <PortfolioButton />
           </div>
-          <div className="hidden flex-col pt-8 sm:pt-8 md:pt-24 lg:pt-24 xl:pt-24 sm:flex md:flex lg:flex xl:flex 2xl:flex">
+          <div className=" flex-col pt-8 sm:pt-8 md:pt-24 lg:pt-24 xl:pt-24 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex">
             <UpDownButtonToAboutMe />
           </div>
 
