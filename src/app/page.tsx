@@ -80,7 +80,7 @@ export default function Home() {
             <h1 className="text-6xl  sm:7xl md:7xl lg7xl: xl:7xl 2xl:7xl font-montserrat font-bold pb-14">
               SKILLS
             </h1>
-            <div className="flex flex-row w-full flex-wrap">
+            <div className="flex flex-row w-full">
               <div className=" w-full">
                 <ProgrammingSkillsChart />
               </div>
@@ -92,7 +92,7 @@ export default function Home() {
               <UpDownButtonToLastSkills />
             </div>
             <div
-              className="flex flex-row w-full pt-20 pb-4 flex-wrap"
+              className="flex flex-row w-full pt-20 pb-4"
               id="last-skills-id"
             >
               <div className=" w-full">
