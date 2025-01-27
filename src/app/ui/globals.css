@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.hero-home-container {
+  margin-top: -75px;
+}
+
+/* Animación para rotar el círculo hacia la derecha */
+@keyframes animateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#animateCircle {
+  animation: animateCircle 10s linear infinite;
+  transform-origin: center;
+  transition: fill 0.5s ease-in-out;
+
+  transition: transform 0.5s ease, fill 0.5s ease; /* Transición para el relleno */
+}
+
+#Capa_1 {
+  transition: transform 0.3s ease-in-out;
+}
+
+#Capa_1:hover {
+  transform: scale(1.2);
+}
